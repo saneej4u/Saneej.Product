@@ -28,7 +28,7 @@ namespace Saneej.Product.Services.Product
         public async Task<ActionResponse<List<ProductResponse>>> GetProductsByColorAsync(string color)
         {
             if (string.IsNullOrWhiteSpace(color))
-                return ActionResponse.CreateWithClientError("Please enter valid color.");
+                return ActionResponse.CreateWithClientError("Please enter a valid color.");
 
             var productEntities = await _iProductQuery.GetAllProductByColor(color);
 
