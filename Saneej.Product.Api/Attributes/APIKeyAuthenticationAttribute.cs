@@ -14,14 +14,14 @@ namespace Saneej.Product.Api.Attributes
                 context.Result = new ContentResult()
                 {
                     StatusCode = 401,
-                    Content = "The Api Key for accessing this endpoint is not available"
+                    Content = "API Key is missing."
                 };
 
                 return;
             }
 
             var configurationBuilder = new ConfigurationBuilder();
-            configurationBuilder.AddJsonFile("AppSettings.json");
+            configurationBuilder.AddJsonFile("appSettings.json");
             var Configuration = configurationBuilder.Build();
 
             string api_key_From_Configuration = Configuration[API_Key];
@@ -31,7 +31,7 @@ namespace Saneej.Product.Api.Attributes
                 context.Result = new ContentResult()
                 {
                     StatusCode = 401,
-                    Content = "The Api key is incorrect : Unauthorized access"
+                    Content = "Invalid API Key"
                 };
 
                 return;
