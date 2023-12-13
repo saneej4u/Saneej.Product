@@ -1,4 +1,4 @@
-# CODING TEST - Saneej.Product
+# Wiki : CODING TEST - Product APIs
 
 https://share.vidyard.com/watch/NPahH77dnrmmWavrw5t9fa?
 
@@ -11,4 +11,4 @@ https://share.vidyard.com/watch/NPahH77dnrmmWavrw5t9fa?
 
 ![image](https://github.com/saneej4u/Saneej.Product/assets/22857988/bd916b40-96dd-41dc-9c31-3ed94909d137)
 
-
+NOTE: In this application, to simplify it, I have used API key authentication to secure APIs instead of user authentication mechanisms such as JWT tokens, ASP.NET Core Identity, bearer tokens, OpenID Connect, etc.
